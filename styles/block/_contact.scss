@@ -13,7 +13,6 @@
     &__ways {
         @include flexCenter(row,space-evenly,center,center,wrap);
         margin: 0 0 3rem 0;
-
         a {
             margin: 0 3rem;
             font-size: 1.5rem;
@@ -23,8 +22,14 @@
             text-decoration: none;
             color: $white;
             &:hover {
-                animation-name: button;
-                animation-duration: 1.5s;
+                @include animate(button, 2.5s);
+            }
+            @include mobile {
+                margin: 1rem;
+            }
+            @include keyframes(button) {
+                from {background-color: #ff6161;}
+                to {background-color: #ffddd1;color: #ff6161;}
             }
         }
     }

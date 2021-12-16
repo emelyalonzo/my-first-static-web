@@ -7,14 +7,21 @@
     @include tablet {
         padding: 1rem 0;
     }
+    @include mobile {
+        padding: 2rem 2rem;
+    }
     &__unit{
-        align-self: center;
         border-radius: 2rem;
         margin: 2rem 3rem;
         padding: 5rem 15rem;
         cursor:pointer;
-
+        @include mobile {
+            padding:0;
+            text-align: center;
+            border-radius: 0.1rem;
+        }
         @include tablet {
+            text-align: center;
             padding: 3rem 10rem;
             margin: 1rem 3rem;
         }

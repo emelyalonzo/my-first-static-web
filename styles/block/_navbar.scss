@@ -1,15 +1,41 @@
+header {
+    background-color: $black;
+    padding: 1rem 3rem 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
 
-nav {
-    a {
-    color: $white;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin: 0 3rem 0 0;
-        &:hover {
-            color: $primaryColor;
+    @include mobile {
+        @include flexCenter(row, space-between, center, center, nowrap);
+        padding: 0.5rem 1.5rem 0.5rem 0.7rem;
+        width: 100%;
+    }
+
+    nav {
+        @include mobile {
+            @include flexCenter(row, space-between, center, center, nowrap);
+            padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+            width: 100%;
+        }
+        a {
+        color: $white;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 0 3rem 0 0;
+
+        @include mobile {
+            @include flexCenter(row, space-between, center, center, nowrap);
+            margin: 0;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+            &:hover {
+                color: $primaryColor;
+            }
         }
     }
 }
-    

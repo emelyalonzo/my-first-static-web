@@ -11,3 +11,16 @@
     align-content: $alignC;
     flex-wrap: $wrap;
 }
+
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}
+@mixin animate($animation,$duration){
+    animation: $animation $duration ;
+}
+@keyframes button {
+    from {background-color: #ff6161;}
+    to {background-color: #ffddd1;color: #ff6161;}
+}

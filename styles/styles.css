@@ -1,5 +1,86 @@
+@-webkit-keyframes button {
+  from {
+    background-color: #ff6161;
+  }
+  to {
+    background-color: #ffddd1;
+    color: #ff6161;
+  }
+}
+
+@keyframes button {
+  from {
+    background-color: #ff6161;
+  }
+  to {
+    background-color: #ffddd1;
+    color: #ff6161;
+  }
+}
+
 /*This size or smaller*/
-nav a {
+header {
+  background-color: #080808;
+  padding: 1rem 3rem 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 0.5rem 1.5rem 0.5rem 0.7rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+    width: 100%;
+  }
+}
+
+header nav a {
   color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;
@@ -8,7 +89,32 @@ nav a {
   margin: 0 3rem 0 0;
 }
 
-nav a:hover {
+@media screen and (max-width: 450px) {
+  header nav a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+}
+
+header nav a:hover {
   color: #e02f4c;
 }
 
@@ -88,6 +194,29 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1rem 0.5rem;
+  }
+}
+
 .home img {
   width: 20rem;
   height: 20rem;
@@ -141,6 +270,12 @@ nav a:hover {
   padding: 1rem;
 }
 
+@media screen and (max-width: 450px) {
+  .skills {
+    padding: 0.5rem;
+  }
+}
+
 .skills__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,6 +308,12 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .skills__box {
+    margin: 1rem 1rem;
+  }
+}
+
 .skills__box h3 {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -192,6 +333,12 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .skills--1 {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
 .skills--2 {
   padding: 4rem 10rem;
 }
@@ -199,6 +346,12 @@ nav a:hover {
 @media screen and (max-width: 768px) {
   .skills--2 {
     padding: 3rem 8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skills--2 {
+    padding: 1.5rem 5rem;
   }
 }
 
@@ -232,18 +385,30 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .projects {
+    padding: 2rem 2rem;
+  }
+}
+
 .projects__unit {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   border-radius: 2rem;
   margin: 2rem 3rem;
   padding: 5rem 15rem;
   cursor: pointer;
 }
 
+@media screen and (max-width: 450px) {
+  .projects__unit {
+    padding: 0;
+    text-align: center;
+    border-radius: 0.1rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .projects__unit {
+    text-align: center;
     padding: 3rem 10rem;
     margin: 1rem 3rem;
   }
@@ -337,10 +502,24 @@ nav a:hover {
 }
 
 .contact__ways a:hover {
-  -webkit-animation-name: button;
-          animation-name: button;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation: button 2.5s;
+          animation: button 2.5s;
+}
+
+@media screen and (max-width: 450px) {
+  .contact__ways a {
+    margin: 1rem;
+  }
+}
+
+@keyframes button {
+  from {
+    background-color: #ff6161;
+  }
+  to {
+    background-color: #ffddd1;
+    color: #ff6161;
+  }
 }
 
 footer {
@@ -366,19 +545,6 @@ footer {
   color: #ffffff;
   font-size: 1.3rem;
   font-weight: 300;
-}
-
-header {
-  background-color: #080808;
-  padding: 1rem 3rem 1rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  position: fixed;
-  width: 100%;
 }
 
 body {

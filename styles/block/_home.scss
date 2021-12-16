@@ -19,6 +19,11 @@
         padding: 2rem 1rem;
     }
 
+    @include mobile {
+        @include flexCenter(column, center, center, center, wrap);
+        padding: 1rem 0.5rem;
+    }
+
     img {
         width: 20rem;
         height: 20rem;
