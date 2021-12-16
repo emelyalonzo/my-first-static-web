@@ -1,0 +1,43 @@
+.projects {
+    @include fullContainer();
+    @include flexCenter(row,space-evenly,center,center,wrap);
+    background-color:$darkPink;
+    padding: 2rem 0;
+
+    @include tablet {
+        padding: 1rem 0;
+    }
+    &__unit{
+        align-self: center;
+        border-radius: 2rem;
+        margin: 2rem 3rem;
+        padding: 5rem 15rem;
+        cursor:pointer;
+
+        @include tablet {
+            padding: 3rem 10rem;
+            margin: 1rem 3rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: $white;
+        }
+    }
+}
+
+.project--1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url('../images/avion.jpg');
+    box-shadow: 1rem 0 .4rem $black;
+}
+.project--2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url('../images/transporte.png');
+    box-shadow: 1rem 0 .4rem $black;
+}
+.project--3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url('../images/medico.jpg');
+    box-shadow:  1rem 0.5rem .3rem $black;
+}

@@ -1,0 +1,46 @@
+.skills {
+    @include fullContainer();
+    @include flexCenter(row,center,stretch,center,wrap);
+    color: $white;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),url('../images/code.png');
+    opacity: 0.9;
+    padding: 1rem;
+
+    &__box{
+        @include flexCenter(column,center,stretch,center,wrap);
+        background-color:$primaryColor;
+        box-shadow: 1rem 0 .4rem $black;
+        border-radius: 2rem;
+        text-transform: capitalize;
+        margin: 3rem 3rem;
+        @include tablet {
+            margin: 2rem 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        li {
+            font-size: 1.5rem;
+        }
+    }   
+}
+
+.skills--1 {
+    padding: 4rem 8rem;
+    @include tablet {
+        padding: 3rem 5rem;
+    }
+}
+
+.skills--2 {
+    padding: 4rem 10rem;
+    @include tablet {
+        padding: 3rem 8rem;
+    }
+}

@@ -1,0 +1,31 @@
+.contact {
+    @include fullContainer();
+    @include flexCenter(column,center,center,center,wrap);
+    color: $white;
+    padding: 4rem 0 5rem 0;
+    background-color: $primaryColor;
+    
+    h6 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    &__ways {
+        @include flexCenter(row,space-evenly,center,center,wrap);
+        margin: 0 0 3rem 0;
+
+        a {
+            margin: 0 3rem;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            border: solid 2px $white;
+            border-radius: 2rem;
+            text-decoration: none;
+            color: $white;
+            &:hover {
+                animation-name: button;
+                animation-duration: 1.5s;
+            }
+        }
+    }
+}

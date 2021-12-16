@@ -1,0 +1,45 @@
+.home {
+    @include fullContainer();
+    @include flexCenter(row,space-evenly,center,center,wrap);
+    padding: 4rem 2rem;
+    color: $white;
+    
+    background: linear-gradient(180deg, #080808, #582432);
+    background-size: 400% 400%;
+    animation: bgAnimation 24s ease infinite;
+    
+    @keyframes bgAnimation {
+        0%{background-position:50% 0%}
+        50%{background-position:50% 100%}
+        100%{background-position:50% 0%}
+    }
+
+    @include tablet {
+        @include flexCenter(column, center, center, center, wrap);
+        padding: 2rem 1rem;
+    }
+
+    img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        box-shadow: 0 0 15px 10px $secondaryColor;
+
+        @include tablet {
+            width: 15rem;
+            height: 15rem;
+            margin-top: 2rem;
+        }
+    }
+
+    &__text {
+        .name {
+            font-size: 3rem;
+            font-weight: 700;
+            color:$primaryColor;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+footer {
+    @include flexCenter(row,space-evenly,center,center,wrap);
+    background-color: $darkPink;
+    padding: 1rem ;
+    color:$white;
+    font-size: 1.3rem;
+    font-weight: 300;
+}

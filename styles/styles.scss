@@ -1,0 +1,29 @@
+@import './utilities/variables';
+@import './utilities/mixins';
+@import './utilities/responsive';
+
+@import './block/navbar';
+@import './block/home';
+@import './block/skills';
+@import './block/projects';
+@import './block/contact';
+@import './block/footer';
+
+header {
+    background-color: $black;
+    padding: 1rem 3rem 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: $secondaryColor;
+}
+p {
+    color:$white
+}
